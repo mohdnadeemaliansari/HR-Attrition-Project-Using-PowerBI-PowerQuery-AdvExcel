@@ -58,10 +58,10 @@ performance.html
 salary.html
 insights.html
 action-plan.html
-css/style.css     palette, layout, components
-js/data.js        generated dataset (dictionary-encoded columns)
-js/charts.js      SVG chart functions
-js/app.js         filters, measures, per-page rendering
+style.css      palette, layout, components
+data.js        generated dataset (dictionary-encoded columns)
+charts.js      SVG chart functions
+app.js         filters, measures, per-page rendering
 ```
 
 ## Running it

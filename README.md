@@ -1,4 +1,3 @@
-# HR-Attrition-Project-Using-PowerBI-PowerQuery-AdvExcel
 # HR Attrition & Performance — Multi-Page Dashboard
 
 A front-end rebuild of the HR Attrition Power BI report (`HR_Attrition_Project.pbix`) as a

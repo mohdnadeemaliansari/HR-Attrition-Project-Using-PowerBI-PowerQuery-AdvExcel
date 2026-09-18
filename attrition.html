@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Attrition &middot; HR Attrition Analysis</title>
+<meta name="description" content="Attrition rate by gender, department, education and job role.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="attrition">
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="mark" aria-hidden="true"></span>
+    <span>
+      <b>HR Attrition &amp; Performance</b>
+      <i>1,470 employees &middot; from insights to impact</i>
+    </span>
+  </div>
+  <nav class="tabs" aria-label="Report pages">
+    <a href="index.html">Overview</a>
+    <a href="attrition.html" aria-current="page">Attrition</a>
+    <a href="performance.html">Performance</a>
+    <a href="salary.html">Salary</a>
+    <a href="insights.html">Insights</a>
+    <a href="action-plan.html">Action plan</a>
+  </nav>
+</header>
+
+<div class="shell">
+
+  <aside class="filters" id="filters" aria-label="Filters">
+    <div class="filters-head">
+      <h2>Filters</h2>
+      <button type="button" id="reset">Clear all</button>
+    </div>
+    <div id="filter-groups"></div>
+    <p class="scope" id="scope"></p>
+  </aside>
+
+  <main id="main">
+    <div class="page-head">
+      <h2>Attrition</h2>
+      <p>Who is leaving, and from where.</p>
+    </div>
+
+    <div class="kpis" id="kpis2"></div>
+
+    <div class="grid two">
+      <article class="card">
+        <h3>Attrition rate by gender</h3>
+        <div class="chart" id="atGender"></div>
+      </article>
+      <article class="card">
+        <h3>Attrition rate by department</h3>
+        <div class="chart" id="atDept"></div>
+      </article>
+    </div>
+
+    <div class="grid two">
+      <article class="card">
+        <h3>Attrition rate by education</h3>
+        <div class="chart" id="atEdu"></div>
+      </article>
+      <article class="card">
+        <h3>Attrition rate by education field</h3>
+        <div class="chart" id="atField"></div>
+      </article>
+    </div>
+
+    <article class="card">
+      <h3>Attrition rate by job role</h3>
+      <div class="chart" id="atRole"></div>
+    </article>
+
+    <nav class="next">
+      <a href="performance.html">See how satisfaction tracks against these rates</a>
+    </nav>
+
+  </main>
+</div>
+
+<footer class="foot">
+  <span>HR Attrition Analysis &mdash; rebuilt from a Power BI model in HTML, CSS and JavaScript</span>
+  <span>People &middot; Performance &middot; Progress</span>
+</footer>
+
+<div class="tip" id="tip" role="status" aria-live="polite"></div>
+
+<script src="js/data.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

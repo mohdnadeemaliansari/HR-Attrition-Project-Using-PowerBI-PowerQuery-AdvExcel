@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Overview &middot; HR Attrition Analysis</title>
+<meta name="description" content="Headline attrition rate, department and age-group breakdown.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="overview">
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="mark" aria-hidden="true"></span>
+    <span>
+      <b>HR Attrition &amp; Performance</b>
+      <i>1,470 employees &middot; from insights to impact</i>
+    </span>
+  </div>
+  <nav class="tabs" aria-label="Report pages">
+    <a href="index.html" aria-current="page">Overview</a>
+    <a href="attrition.html">Attrition</a>
+    <a href="performance.html">Performance</a>
+    <a href="salary.html">Salary</a>
+    <a href="insights.html">Insights</a>
+    <a href="action-plan.html">Action plan</a>
+  </nav>
+</header>
+
+<div class="shell">
+
+  <aside class="filters" id="filters" aria-label="Filters">
+    <div class="filters-head">
+      <h2>Filters</h2>
+      <button type="button" id="reset">Clear all</button>
+    </div>
+    <div id="filter-groups"></div>
+    <p class="scope" id="scope"></p>
+  </aside>
+
+  <main id="main">
+    <div class="hero">
+      <div class="hero-figure">
+        <p class="hero-label">Attrition rate</p>
+        <p class="hero-number" id="heroRate">&mdash;</p>
+        <p class="hero-sub" id="heroSub"></p>
+      </div>
+      <div class="hero-split" id="heroSplit"></div>
+    </div>
+
+    <div class="kpis" id="kpis"></div>
+
+    <div class="grid two">
+      <article class="card">
+        <h3>Where people are leaving</h3>
+        <p class="note">Attrition rate by department</p>
+        <div class="chart" id="ovDept"></div>
+      </article>
+      <article class="card">
+        <h3>Who is leaving</h3>
+        <p class="note">Attrition rate by age group</p>
+        <div class="chart" id="ovAge"></div>
+      </article>
+    </div>
+
+    <article class="card">
+      <h3>Attrition rate by job role</h3>
+      <p class="note">Roles above the company rate carry the most risk</p>
+      <div class="chart" id="ovRole"></div>
+    </article>
+
+    <nav class="next">
+      <a href="attrition.html">Break attrition down by gender, education and role</a>
+    </nav>
+
+  </main>
+</div>
+
+<footer class="foot">
+  <span>HR Attrition Analysis &mdash; rebuilt from a Power BI model in HTML, CSS and JavaScript</span>
+  <span>People &middot; Performance &middot; Progress</span>
+</footer>
+
+<div class="tip" id="tip" role="status" aria-live="polite"></div>
+
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
